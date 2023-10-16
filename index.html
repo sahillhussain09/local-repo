@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making new repo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        hello, <span class="username"></span>
+    </h1>
+    <p>This is new repo.</p>
+
+    <button type="button" class="btn" onclick="handleName()">Hit Me</button>
+
+
+    <script>
+        const btn = document.querySelector(".btn");
+        const nameSpan = document.querySelector(".username");
+
+        const handleName = () => {
+            console.log("hello world");
+            nameSpan.innerHTML = "sahil hussain"
+        }
+
+    </script>
+
+</body>
+
+</html>

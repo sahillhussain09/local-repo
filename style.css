@@ -1,0 +1,18 @@
+.btn {
+  padding: 4px 20px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  text-transform: lowercase;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.501);
+}
