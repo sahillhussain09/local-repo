@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>making new repo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <h1>
-        hello, <span class="username"></span>
-    </h1>
+  <body>
+    <h1>hello, <span class="username"></span></h1>
     <p>This is new repo.</p>
 
     <button type="button" class="btn" onclick="handleName()">Hit Me</button>
     <button type="button" class="btn" onclick="cleanMe()">clear</button>
 
-
-
     <script>
-        const btn = document.querySelector(".btn");
-        const nameSpan = document.querySelector(".username");
+      const btn = document.querySelector(".btn");
+      const nameSpan = document.querySelector(".username");
+      let username;
 
-        const username = prompt();
-     
-        const handleName = () => {
-            console.log("hello world");
-            nameSpan.innerHTML = username ? username : "Dummy user."
-        }
+      username = prompt();
 
-        const cleanMe = () =>{
-            console.log("clear nameSpan value");
-            nameSpan.innerHTML = null
-        }
+      const clearUserName = () => {
+        username = prompt();
+      };
 
+      const handleName = () => {
+        console.log("hello world");
+        nameSpan.innerHTML = username ? username : "Dummy user.";
+      };
+
+      const cleanMe = () => {
+        nameSpan.innerHTML = null;
+        clearUserName();
+        nameSpan.innerHTML = username ? username : "Dummy user.";
+      };
     </script>
-
-</body>
-
+  </body>
 </html>
