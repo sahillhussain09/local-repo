@@ -21,13 +21,16 @@
     <button type="button" class="btn" onclick="cleanMe()">clear</button>
 
 
+
     <script>
         const btn = document.querySelector(".btn");
         const nameSpan = document.querySelector(".username");
 
+        const username = prompt();
+     
         const handleName = () => {
             console.log("hello world");
-            nameSpan.innerHTML = "sahil hussain"
+            nameSpan.innerHTML = username ? username : "Dummy user."
         }
 
         const cleanMe = () =>{
